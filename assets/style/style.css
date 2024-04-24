@@ -1,9 +1,21 @@
 :root {
     --nutmeg: hsl(14, 45%, 36%);
     --darkRasperry:hsl(332, 51%, 32%);
-    
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggShell: hsl(30, 54%, 90%);
+    --lightGray: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
 }
-
+@font-face {
+    font-family: "young-serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
 
 .attribution {
     font-size: 11px;
@@ -12,4 +24,77 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: flex;
+    background-color: var(--eggShell);  
+    margin: 0;
+    padding: 0;
+    font-family: outfit, sans-serif;
+    font-weight: 200;
+    font-size: 0.7rem;
+    height: 100vh;
+    color: var(--darkCharcoal);
+}
+
+main {
+  
+    background-color: var(--white);
+    max-width: 420px;
+    margin: auto;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+h1, h2 {
+    font-family: "young-serif", serif;
+    font-weight: 100;
+    margin: 1.3rem 0rem;
+    padding: 0;
+    color: var(--nutmeg);
+}
+h1 {
+    color: var(--darkCharcoal);
+    
+}
+
+header img {
+    width: 100%;
+    border-radius: 0.5rem;
+    
+}
+
+aside {
+    background-color: var(--roseWhite);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+aside h3 {
+    color: var(--darkRasperry);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-top: 0.5px solid var(--lightGray);
+}
+
+span {
+    font-weight: 400;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr {
+    border-bottom: 1px solid var(--lightGray);
+    
+}
+.values {
+    font-weight: 500;
+    color: var(--nutmeg);
 }
