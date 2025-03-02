@@ -33,7 +33,7 @@ body {
     padding: 0;
     font-family: outfit, sans-serif;
     font-weight: 200;
-    font-size: 0.7rem;
+    font-size: 1 rem;
     height: 100vh;
     color: var(--darkCharcoal);
 }
@@ -41,15 +41,16 @@ body {
 main {
   
     background-color: var(--white);
-    max-width: 420px;
+    max-width: 500px;
     margin: auto;
     border-radius: 0.5rem;
     padding: 1.5rem;
 }
 h1, h2 {
     font-family: "young-serif", serif;
-    font-weight: 100;
-    margin: 1.3rem 0rem;
+    font-size: 1.75rem;
+    font-weight: 125;
+    margin: 1.2rem 0rem;
     padding: 0;
     color: var(--nutmeg);
 }
@@ -88,13 +89,23 @@ span {
 
 table {
     border-collapse: collapse;
+    
     width: 100%;
 }
 tr {
     border-bottom: 1px solid var(--lightGray);
     
 }
+td {
+    padding: 0.75rem;
+}
+
+
 .values {
     font-weight: 500;
     color: var(--nutmeg);
+}
+
+li {
+    margin-bottom: 0.5rem;
 }
